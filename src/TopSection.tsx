@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
-import PostStoriesJson from "./Stories.json";
-import IO from "./IncredibleOffers.json";
+import PostStoriesJson from "./Stories";
+import IO from "./IncredibleOffers";
 import "./assets/css-styles/main.css";
 import ReactPlayer from "react-player";
 import SwiperCore from "swiper/core";
@@ -930,33 +930,35 @@ const Top = () => {
             onReachEnd={() => setIOE(true)}
             dir="rtl"
             slidesPerView={7.1}
-            breakpoints={{
-              // window width is >= N
-              1800: {
-                slidesPerView: 1,
-              },
-              //   800: {
-              //     slidesPerView: 8,
-              //   },
-              //   700: {
-              //     slidesPerView: 7,
-              //   },
-              //   600: {
-              //     slidesPerView: 6,
-              //   },
-              //   450: {
-              //     slidesPerView: 5,
-              //   },
-              //   400: {
-              //     slidesPerView: 4,
-              //   },
-              //   300: {
-              //     slidesPerView: 3,
-              //   },
-              //   0: {
-              //     slidesPerView: 3,
-              //   },
-            }}
+            breakpoints={
+              {
+                // window width is >= N
+                // 1800: {
+                //   slidesPerView: 1,
+                // },
+                //   800: {
+                //     slidesPerView: 8,
+                //   },
+                //   700: {
+                //     slidesPerView: 7,
+                //   },
+                //   600: {
+                //     slidesPerView: 6,
+                //   },
+                //   450: {
+                //     slidesPerView: 5,
+                //   },
+                //   400: {
+                //     slidesPerView: 4,
+                //   },
+                //   300: {
+                //     slidesPerView: 3,
+                //   },
+                //   0: {
+                //     slidesPerView: 3,
+                //   },
+              }
+            }
             spaceBetween={4}
             mousewheel={true}
             onWheel={() => IncredibleOfferRef?.current?.slideNext()}

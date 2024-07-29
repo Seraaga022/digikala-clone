@@ -1,5 +1,5 @@
 import React from "react";
-import categoriesJson from "./categories.json";
+import categoriesJson from "./categories";
 
 type CategoryItem = {
   content: string;
