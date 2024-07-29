@@ -1,0 +1,442 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300&family=Noto+Sans+Arabic:wght@300;400&family=Rubik&display=swap");
+
+.container-xs-w {
+  width: 100%;
+  max-width: 320px;
+}
+.container-sm-w {
+  width: 100%;
+  max-width: 640px;
+}
+.container-md-w {
+  width: 100%;
+  max-width: 768px;
+}
+.container-lg-w {
+  width: 100%;
+  max-width: 1024px;
+}
+.container-xl-w {
+  width: 100%;
+  max-width: 1280px;
+}
+.container-2xl-w {
+  width: 100%;
+  max-width: 1336px;
+}
+.container-3xl-w {
+  width: 100%;
+  max-width: 1440px;
+}
+.container-4xl-w {
+  width: 100%;
+  max-width: 1676px;
+}
+
+/* @font-face {
+  font-family: 'myWebFont';
+  src: url('.././fonts/desire.ttf')
+}
+
+.someThing {
+  font-family: 'myWebFont', sans-serif;
+} */
+
+/* IL: IsLive, NL: NotLive */
+.content {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  overflow: hidden;
+  /* gap: 30px; */
+  height: 2000px;
+}
+
+.itsSection1 {
+  color: black;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+}
+
+.commerces-slider {
+  padding-top: 10px;
+  padding-right: 20px;
+  display: flex;
+  width: 1350px;
+  height: 100%;
+}
+
+.commerces__stuff {
+  /* background-color: palegreen; */
+  cursor: pointer;
+  display: flex;
+  direction: rtl;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5px;
+  min-width: 90px;
+  height: 150px;
+  overflow: hidden;
+  color: black;
+}
+
+.commerces__img__holder {
+  /* background-color: pink; */
+  position: relative;
+  margin-bottom: auto;
+  display: grid;
+  grid-template-rows: 90% 10%;
+  grid-template-columns: 100%;
+  place-items: center center;
+  padding: 5px;
+  width: 100%;
+  height: 70%;
+}
+
+.commerces__img__lable {
+  position: absolute;
+  top: 0;
+  border: 3px solid #224e89;
+  /* background-image: linear-gradient(to bottom,#214d88, cornflowerblue); */
+  width: 80px;
+  height: 80px;
+  border-radius: 999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.commerces__img-IL {
+  padding: 6px;
+  background-image: linear-gradient(to bottom right, #224e89, cornflowerblue);
+}
+
+.commerces__img-IL,
+.commerces__img-NL {
+  background-repeat: no-repeat;
+  width: 72px;
+  height: 72px;
+  border-radius: 999px;
+  object-fit: cover;
+}
+
+.commerces__img-NL {
+  padding: 1px;
+  background-color: white;
+}
+
+.commerces__img__offer-IL,
+.commerces__img__offer-NL {
+  position: absolute;
+  bottom: 0;
+  direction: ltr;
+  border: 2px solid white;
+  font-size: 10px;
+  font-weight: 500;
+  padding: 2px 5px 5px 5px;
+}
+
+.commerces__img__offer-IL {
+  background-color: #e7f0f8;
+  color: #3881c5;
+}
+
+.commerces__img__offer-NL {
+  background-color: #3881c5;
+  color: #fdecf5;
+}
+
+.commerces__content {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
+  text-align: center;
+  font-size: 11.5px;
+  height: 40%;
+  color: rgb(13, 13, 60);
+
+  & p {
+    line-height: 25px;
+    display: -webkit-box;
+    overflow: hidden;
+    min-width: 5.6rem;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+}
+
+.i-container-right,
+.i-container-left,
+.i-container-mainSlider-left,
+.i-container-mainSlider-right,
+.i-container-Story-right,
+.i-container-Story-left {
+  position: absolute;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-content: center;
+  background: white;
+  border: 1px solid #e3e3e4;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.incredible-offer-container-right,
+.incredible-offer-container-left {
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-content: center;
+  background: white;
+  border: 1px solid #e3e3e4;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.i-container-right {
+  right: 8px;
+  top: 70px;
+}
+
+.i-container-left {
+  left: 8px;
+  top: 70px;
+}
+
+.story-Swiper-i-container-btn i,
+.incredible-offer-Swiper-btn-container i {
+  z-index: 2;
+  border-radius: 9999999px;
+  color: #7a7e84;
+  font-size: 13px;
+}
+
+.incredible-offer-Swiper-btn-container {
+  display: flex;
+  justify-content: start;
+  height: 300px;
+  align-items: center;
+}
+
+.incredible-offer-Swiper-btn-container > .incredible-offer-container-left {
+  margin-left: auto;
+}
+
+.i-container-right:hover i,
+.incredible-offer-container-right:hover i {
+  color: #424750;
+}
+
+.i-container-left:hover i,
+.incredible-offer-container-left:hover i {
+  color: #424750;
+}
+
+.itsSection2 {
+  /* background: red; */
+  height: 400px;
+  width: 100svw;
+}
+
+.main-slider-lable {
+  display: grid;
+  place-content: center;
+  width: 100svw;
+  height: 400px;
+}
+
+/* .xxxl {
+  max-width: 2000px;
+} */
+
+.main-slider {
+  display: flex;
+  object-fit: cover;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+}
+
+.main-slider-img {
+  display: flex;
+  justify-content: center;
+  height: 420px;
+}
+
+/* the main slider's right button's style */
+.i-container-mainSlider-right {
+  margin-bottom: 40px;
+  margin-right: 35px;
+  opacity: 0;
+  color: #424750;
+  font-size: 11px;
+}
+
+/* the main slider's left button's style */
+.i-container-mainSlider-left {
+  margin-bottom: 40px;
+  margin-right: 90px;
+  opacity: 0;
+  color: #424750;
+  font-size: 11px;
+}
+
+/* for revialing the buttons when hover on main sliders */
+.main-slider:hover .i-container-mainSlider-right,
+.main-slider:hover .i-container-mainSlider-left {
+  display: grid;
+  transition: opacity ease 0.5s;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* .heroSwiper-pagination { */
+.swiper-pagination {
+  bottom: 0 !important;
+}
+
+/* setting style for dots */
+/* .heroSwiper-pagination-bullet { */
+.swiper-pagination span {
+  width: 5px;
+  height: 5px;
+  background: #8b98a3;
+  opacity: 50%;
+}
+
+/* setting style for dots when are active */
+/* .heroSwiper-pagination-bullet-active { */
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: #fff;
+  opacity: 100%;
+  border-radius: 5px;
+  width: 16px;
+  transition: all ease 400ms;
+}
+
+.modal {
+  /* Semi-transparent background */
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.storyContent__intire__section {
+  background-image: linear-gradient(to top, transparent 86%, black 110%),
+    linear-gradient(to bottom, transparent 65%, black 88%);
+  /* filter: opacity(90%); */
+  background-color: transparent;
+}
+
+.display__top {
+  height: 90px;
+  /* background: red; */
+  display: flex;
+  align-items: center;
+}
+
+.author__section {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* background: #224e89; */
+}
+
+.back_to_main div i {
+  color: #fff;
+  font-size: 20px;
+}
+
+.author__name {
+  & h5 {
+    color: white;
+  }
+
+  & .image-lable {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    border-radius: 50%;
+    margin-left: 10px;
+    background-image: url("./assets/box.webp");
+
+    & img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background-size: cover;
+    }
+  }
+}
+
+.author__follow {
+  margin-left: 20px;
+  margin-right: auto;
+
+  & button {
+    background: white;
+    color: black;
+    font-size: 14px;
+    border: none;
+    padding-block: 10px;
+    padding-inline: 20px;
+    border-radius: 8px;
+  }
+}
+
+.i-container-Story-right {
+  /* margin-right: auto; */
+  top: 50%;
+  right: -70px;
+}
+
+.i-container-Story-left {
+  /* margin-right: auto; */
+  top: 50%;
+  left: -70px;
+}
+
+/* .onVideo > .bottom {
+
+} */
+
+/* .video_play_control > .video__progress > input[type=range]::-webkit-slider-thumb { */
+input[type="range"]::-webkit-slider-thumb {
+  background-color: red;
+  color: red;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* mobiles */
+@media (max-width: 1000px) {
+  .i-container-mainSlider-right,
+  .i-container-mainSlider-left {
+    margin-bottom: 10px;
+    width: 25px;
+    height: 25px;
+    font-size: 6px;
+  }
+  .i-container-mainSlider-right {
+    margin-right: 15px;
+  }
+  .i-container-mainSlider-left {
+    margin-right: 45px;
+  }
+  .heroSwiper-pagination-bullet {
+    width: 4px;
+    height: 4px;
+    background: #8b98a3;
+  }
+  .heroSwiper-pagination-bullet-active {
+    background: #fff;
+    border-radius: 5px;
+    width: 16px;
+    transition: all ease 300ms;
+  }
+}

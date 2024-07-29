@@ -1,0 +1,46 @@
+const handleOnClickCommerciers = () => {
+  return (
+    <>
+      <div className="_main_">
+        <div className="container">
+          <div className="display">
+            <div className="button__prev"></div>
+            <div className="button__next"></div>
+            <div className="video__section">
+              <div className="onVideo">
+                <div className="top">
+                  <div className="back_to_main"></div>
+                  <div className="author__section">
+                    <div className="author__img"></div>
+                    <div className="author__name"></div>
+                    <div className="author__follow"></div>
+                  </div>
+                </div>
+                <div className="middle"></div>
+                <div className="bottom">
+                  <div className="_like&comment_">
+                    <div className="like_section"></div>
+                    <div className="comment_section">
+                      <div className="conetent"></div>
+                    </div>
+                  </div>
+                  <div className="video__title"></div>
+                  <div className="video_play_control">
+                    <div className="time"></div>
+                    <div className="progress"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="product__section">
+              <div className="product">
+                <div className="product__img"></div>
+                <div className="product__title"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
